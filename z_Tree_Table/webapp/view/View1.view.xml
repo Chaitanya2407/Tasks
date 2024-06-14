@@ -1,0 +1,75 @@
+<mvc:View controllerName="com.dpz_Tree_Table.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns:m="sap.m" xmlns="sap.ui.table">
+	<m:App>
+		<m:pages>
+			<m:Page title="{i18n>title}">
+				<m:content>
+					<TreeTable id="treeTableA" rows="{TreeDataModel>/table1Cricket/}" visibleRowCount="{TreeDataModel>/firstTable}">
+						<extension>
+							<m:OverflowToolbar>
+								<m:Title text="TABLE - A"/>
+							</m:OverflowToolbar>
+						</extension>
+						<columns>
+							<Column>
+								<m:Label text="Cricket"></m:Label>
+								<template>
+									<m:Text text="{TreeDataModel>name}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Cricket"></m:Label>
+								<template>
+									<m:Text text="{TreeDataModel>Team}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Team"></m:Label>
+								<template>
+									<m:Text text="{TreeDataModel>Champions}"/>
+								</template>
+							</Column>
+						</columns>
+					</TreeTable>
+					
+					<m:Label></m:Label>
+					
+					<m:FlexBox justifyContent="Center">
+						<m:Button text="ADD" type="Emphasized" class="sapUiMediumMargin" press="onPressADD"></m:Button>
+						<m:Button text="REMOVE" type="Reject" class="sapUiMediumMargin" press="onPressRemove"></m:Button>
+					</m:FlexBox>
+					
+					<m:Label></m:Label>
+					
+					<TreeTable id="treeTableB" rows="{TreeDataModel>/table2Cricket/}" visibleRowCount="{TreeDataModel>/secondTable}">
+						<extension>
+							<m:OverflowToolbar>
+								<m:Title text="TABLE - B"/>
+							</m:OverflowToolbar>
+						</extension>
+						<columns>
+							<Column>
+								<m:Label text="Cricket"></m:Label>
+								<template>
+									<m:Text text="{TreeDataModel>name}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Cricket"></m:Label>
+								<template>
+									<m:Text text="{TreeDataModel>Team}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Team"></m:Label>
+								<template>
+									<m:Text text="{TreeDataModel>Champions}"/>
+								</template>
+							</Column>
+						</columns>
+					</TreeTable>
+				</m:content>
+			</m:Page>
+		</m:pages>
+	</m:App>
+</mvc:View>

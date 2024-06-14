@@ -1,0 +1,44 @@
+<mvc:View controllerName="com.dpz_with_Parameters.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:SimpleForm
+					
+					layout="ResponsiveGridLayout"
+					editable="true"
+					
+					labelSpanXL="5"
+					labelSpanL="5"
+					labelSpanM="5"
+					labelSpanS="5"
+					
+					emptySpanXL="4"
+					emptySpanL="4"
+					emptySpanM="4"
+					emptySpanS="4"
+					
+					columnsXL="5"
+					columnsL="5"
+					columnsM="5">
+					
+						
+						<Label text="Company Name " required="true" design="Bold"></Label>
+						<Text id="bindName"></Text>
+						
+						<Label text="Contact Number "  required="true" design="Bold"></Label>
+						<Text id="bindNumber"></Text>
+						
+						<Label text="Company Email ID "  required="true" design="Bold"></Label>
+						<Text id="bindEmail"></Text>
+						
+						<Label text="Company Location "  required="true" design="Bold"></Label>
+						<Text id="bindLocation"></Text>
+					</form:SimpleForm>
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,11 @@
+<mvc:View controllerName="com.dpz_FormTable_4Views.controller.EmpStatusView4" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.uxap" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>Employee}">
+				<content>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

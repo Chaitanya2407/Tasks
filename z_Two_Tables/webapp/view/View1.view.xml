@@ -1,0 +1,97 @@
+<mvc:View controllerName="com.dpz_Two_Tables.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table id="personTableA" items="{personDataModel>/personEntityData}" mode="MultiSelect">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Table A"></Title>
+							</Toolbar>
+						</headerToolbar>              
+						<columns>
+							<Column>
+								<Text text="Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Age"></Text>
+							</Column>
+							<Column>
+								<Text text="Mobile Number"></Text>
+							</Column>
+							<Column>
+								<Text text="Email Id"></Text>
+							</Column>
+							<Column>
+								<Text text="City"></Text>
+							</Column>
+							<Column>
+								<Text text="Country"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{personDataModel>pName}"></Text>
+									<Text text="{personDataModel>pAge}"></Text>
+									<Text text="{personDataModel>pMobileNumber}"></Text>
+									<Text text="{personDataModel>pEmailId}"></Text>
+									<Text text="{personDataModel>pCity}"></Text>
+									<Text text="{personDataModel>pCountry}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					
+					<Label></Label>
+					<FlexBox justifyContent="Center">
+					<Button text="ADD" type="Emphasized" class="sapUiMediumMargin" press="onPressADD"></Button>
+					<Button text="REMOVE" type="Reject" class="sapUiMediumMargin" press="onPressRemove"></Button>
+					</FlexBox>
+					<Label></Label>
+					
+					<Table id="personTableB" items="{personDataModel>/humanEntityData}" mode="MultiSelect">
+						<headerToolbar>
+							<Toolbar>
+								<Title text="Table B"></Title>
+							</Toolbar>
+						</headerToolbar>    
+						<columns>
+							<Column>
+								<Text text="Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Age"></Text>
+							</Column>
+							<Column>
+								<Text text="Mobile Number"></Text>
+							</Column>
+							<Column>
+								<Text text="Email Id"></Text>
+							</Column>
+							<Column>
+								<Text text="City"></Text>
+							</Column>
+							<Column>
+								<Text text="Country"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{personDataModel>pName}"></Text>
+									<Text text="{personDataModel>pAge}"></Text>
+									<Text text="{personDataModel>pMobileNumber}"></Text>
+									<Text text="{personDataModel>pEmailId}"></Text>
+									<Text text="{personDataModel>pCity}"></Text>
+									<Text text="{personDataModel>pCountry}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

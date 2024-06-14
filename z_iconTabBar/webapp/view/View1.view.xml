@@ -1,0 +1,256 @@
+<mvc:View controllerName="com.dpz_iconTabBar.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>Multiple Forms}">
+				<IconTabBar expandable="false"
+            				selectedKey="tab1"
+            				id="myIconTabBar" select="onSelectTab3">
+					<items>
+						<IconTabFilter text="Survey Form"
+						icon="sap-icon://survey" key="tab1" iconColor="Positive">
+							<form:SimpleForm
+									layout="ResponsiveGridLayout"
+									editable="true"
+									
+									labelSpanXL="5"
+									labelSpanL="4"
+									labelSpanM="5"
+									labelSpanS="3"
+									
+									emptySpanXL="4"
+									emptySpanL="4"
+									emptySpanM="6"
+									emptySpanS="3"
+									
+									columnsXL="6"
+									columnsL="3"
+									columnsM="3" >
+									
+										<Label text="Id"  required="true" design="Bold"></Label>
+										<Input placeholder="Survey Id" id="personId" type="Tel"  showValueHelp="true" valueHelpRequest="valueHelpId" liveChange="onPersonId"></Input>
+										
+										<Label text=" Name " required="true" design="Bold"></Label>
+										<Input placeholder="Name" id="personName" type="Text" showValueHelp="true" valueHelpRequest="valueHelpName" liveChange="onPersonName"></Input>
+										
+										<Label text=" Age "  required="true" design="Bold" ></Label>
+										<Input placeholder="Age" id="personAge" type="Number"  showValueHelp="true" valueHelpRequest="valueHelpAge"  liveChange="onPersonAge"></Input>
+										
+										<Label text="Designation" required="true" design="Bold"></Label>
+										<Input placeholder="Designation" id="personDesignation" type="Text"  showValueHelp="true"  valueHelpRequest="valueHelpDesignation"  liveChange="onPersonDesignation"></Input>
+										
+										<Label text="Email Id "  required="true" design="Bold"></Label>
+										<Input placeholder="Email Id" id="personEmailId" type="Email"  showValueHelp="true"  valueHelpRequest="valueHelpEmailId"  liveChange="onPersonEmailId"></Input>
+										
+										<Label text="Mobile Number "  required="true" design="Bold"></Label>
+										<Input placeholder="Mobile Number" id="personMobileNumber" type="Tel"  showValueHelp="true"  valueHelpRequest="valueHelpMobileNumber"  liveChange="onPersonMobileNumber"></Input>
+										
+										<Label text="City" required="true" design="Bold"></Label>
+										<Input placeholder="City"  id="personCity"  type="Text"  showValueHelp="true"  valueHelpRequest="valueHelpCity"  liveChange="onPersonCity"></Input>
+										
+										<Label text="Country" required="true" design="Bold"></Label>
+										<Input placeholder="Country"  id="personCountry"  type="Text"  showValueHelp="true"  valueHelpRequest="valueHelpCountry"  liveChange="onPersonCountry"></Input>
+										
+										<Label></Label>
+										
+										<FlexBox justifyContent="Center">
+										<Button text="Submit" press="onSubmitSurveyForm" type="Emphasized" ></Button>
+										</FlexBox>
+										
+									</form:SimpleForm>
+						</IconTabFilter>
+						<IconTabFilter text="Person Form"
+						icon="sap-icon://create-form" key="tab2" iconColor="Positive">
+								<form:SimpleForm
+									layout="ResponsiveGridLayout"
+									editable="true"
+									
+									labelSpanXL="5"
+									labelSpanL="4"
+									labelSpanM="5"
+									labelSpanS="3"
+									
+									emptySpanXL="4"
+									emptySpanL="4"
+									emptySpanM="6"
+									emptySpanS="3"
+									
+									columnsXL="6"
+									columnsL="3"
+									columnsM="3">
+										
+										<Label text=" Name " required="true" design="Bold"></Label>
+										<Input placeholder="Name" id="personName_Id" type="Text" ></Input>
+										
+										<Label text=" Age "  required="true" design="Bold" ></Label>
+										<Input placeholder="Age" id="personAge_Id" type="Number"  ></Input>
+										
+										<Label text="Designation" required="true" design="Bold"></Label>
+										<Input placeholder="Designation" id="personDesignation_Id" type="Text" ></Input>
+										
+										<Label text="Email Id "  required="true" design="Bold"></Label>
+										<Input placeholder="Email Id" id="personEmailId_Id" type="Email" ></Input>
+										
+										<Label text="Mobile Number "  required="true" design="Bold"></Label>
+										<Input placeholder="Mobile Number" id="personMobileNumber_Id" type="Tel" ></Input>
+										
+										<Label text="Alternate Mobile Number "  required="true" design="Bold"></Label>
+										<Input placeholder="Alternate Mobile Number" id="personAlternateMobileNumber_Id" type="Tel"  ></Input>
+										
+										<Label text="City" required="true" design="Bold"></Label>
+										<Input placeholder="City"  id="personCity_Id"  type="Text"  ></Input>
+										
+										<Label text="Country" required="true" design="Bold"></Label>
+										<Input placeholder="Country"  id="personCountry_Id"  type="Text" ></Input>
+										
+										<Label></Label>
+										
+										<FlexBox justifyContent="Center">
+										<Button text="Submit" press="onSubmitFormFn" type="Emphasized" ></Button>
+										</FlexBox>
+										
+									</form:SimpleForm>
+						</IconTabFilter>
+						<IconTabFilter text="Person Details"
+						icon="sap-icon://detail-view" key="tab3" id="personTab3" iconColor="Critical" count="0" >
+							<List headerText="Standard List Form"  items="{path:'personDataModel>/personArrayFormData'}" id="personDetailsTabId">
+								<items>
+								<StandardListItem 
+								title="{personDataModel>personObjectName}"
+								description="{personDataModel>personObjectAge}"
+								info="{personDataModel>personObjectCity}"
+								press="onShowDetails" type="Active">
+								</StandardListItem>
+								</items>
+							</List>
+						</IconTabFilter>
+						<IconTabFilter text="Survey Details"
+						icon="sap-icon://approvals" key="tab4" iconColor="Critical">
+							<ObjectHeader title="Survey Form Details" binding="{personDataModel>/surveyArrayFormData/0}">
+								<ObjectAttribute title="Id" text="{personDataModel>surveyObjectId}"></ObjectAttribute>
+								<ObjectAttribute title="Name" text="{personDataModel>surveyObjectName}"></ObjectAttribute>
+								<ObjectAttribute title="Age" text="{personDataModel>surveyObjectAge}"></ObjectAttribute>
+								<ObjectAttribute title="Designation" text="{personDataModel>surveyObjectDesignation}"></ObjectAttribute>
+								<ObjectAttribute title="EmailId" text="{personDataModel>surveyObjectEmailId}"></ObjectAttribute>
+								<ObjectAttribute title="MobileNumber" text="{personDataModel>surveyObjectMobileNumber}"></ObjectAttribute>
+								<ObjectAttribute title="City" text="{personDataModel>surveyObjectCity}"></ObjectAttribute>
+								<ObjectAttribute title="Country" text="{personDataModel>surveyObjectCountry}"></ObjectAttribute>
+							</ObjectHeader>
+						</IconTabFilter>
+						<IconTabFilter text="History" 
+						icon="sap-icon://customer-history" key="tab5" iconColor="Neutral" count="0" id="personTab5">
+							
+							<HeaderContainer>
+								<Button icon="sap-icon://delete" type="Reject" text="Delete" press="deleteBtn"></Button>
+							</HeaderContainer>
+							
+							<Table  id = "historySurveyTableId" items = "{personDataModel>/surveyArrayFormData}" mode="MultiSelect">
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Survey Table Data"></Title>
+									</Toolbar>
+								</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Age"></Text>
+							</Column>
+							<Column>
+								<Text text="Designation"></Text>
+							</Column>
+							<Column>
+								<Text text="Email Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Mobile Number"></Text>
+							</Column>
+							<Column>
+								<Text text="City"></Text>
+							</Column>
+							<Column>
+								<Text text="Country"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{personDataModel>surveyObjectId}"></Text>
+									<Text text="{personDataModel>surveyObjectName}"></Text>
+									<Text text="{personDataModel>surveyObjectAge}"></Text>
+									<Text text="{personDataModel>surveyObjectDesignation}"></Text>
+									<Text text="{personDataModel>surveyObjectEmailId}"></Text>
+									<Text text="{personDataModel>surveyObjectMobileNumber}"></Text>
+									<Text text="{personDataModel>surveyObjectCity}"></Text>
+									<Text text="{personDataModel>surveyObjectCountry}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					
+					<Label>
+					</Label>
+							<Table  id = "historyTableId" items = "{personDataModel>/personArrayFormData}" mode="MultiSelect">
+								<headerToolbar>
+									<Toolbar>
+										<Title text="Person Table Data"></Title>
+										<!--<ToolbarSpacer/>-->
+										<!--<Button icon="sap-icon://delete" type="Reject" text="Delete" press="deleteBtn"></Button>-->
+									</Toolbar>
+								</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Age"></Text>
+							</Column>
+							<Column>
+								<Text text="Designation"></Text>
+							</Column>
+							<Column>
+								<Text text="Email Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Mobile Number"></Text>
+							</Column>
+							<Column>
+								<Text text="Alt Mobile Number"></Text>
+							</Column>
+							<Column>
+								<Text text="City"></Text>
+							</Column>
+							<Column>
+								<Text text="Country"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{personDataModel>personObjectName}"></Text>
+									<Text text="{personDataModel>personObjectAge}"></Text>
+									<Text text="{personDataModel>personObjectDesignation}"></Text>
+									<Text text="{personDataModel>personObjectEmailId}"></Text>
+									<Text text="{personDataModel>personObjectMobileNumber}"></Text>
+									<Text text="{personDataModel>personObjectAltMobileNumber}"></Text>
+									<Text text="{personDataModel>personObjectCity}"></Text>
+									<Text text="{personDataModel>personObjectCountry}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+							
+						</IconTabFilter>
+					</items>
+				</IconTabBar>
+				<content>
+						
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

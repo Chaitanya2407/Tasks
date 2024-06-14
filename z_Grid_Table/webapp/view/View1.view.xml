@@ -1,0 +1,111 @@
+<mvc:View controllerName="com.dpz_Grid_Table.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns:m="sap.m" xmlns="sap.ui.table"  > 
+	<m:App>
+		<m:pages>
+			<m:Page title="{i18n>title}">
+				<m:content>
+					<Table id="tableA" selectionMode="MultiToggle" rows="{DataModel>/personEntityData}" visibleRowCount="{DataModel>/firstTable}">
+						<extension>
+							<m:OverflowToolbar>
+								<m:Title text="TABLE - A"/>
+							</m:OverflowToolbar>
+						</extension>
+						<columns>
+							<Column>
+								<m:Label text="Name"></m:Label>
+								<template>
+									<m:Text text="{DataModel>pName}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Age"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pAge}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Mobile Number"></m:Label>
+								<template>
+									<m:Text text="{DataModel>pMobileNumber}" />
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Email Id"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pEmailId}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="City"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pCity}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Country"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pCountry}"/>
+								</template>
+							</Column>
+						</columns>   
+					</Table>
+					
+					<m:Label></m:Label>
+					
+					<m:FlexBox justifyContent="Center">
+					<m:Button text="ADD" type="Emphasized" class="sapUiMediumMargin" press="onPressADD"></m:Button>
+					<m:Button text="REMOVE" type="Reject" class="sapUiMediumMargin" press="onPressRemove"></m:Button>
+					</m:FlexBox>
+					
+					<m:Label></m:Label>
+					
+					<Table id="tableB" selectionMode="MultiToggle" rows="{DataModel>/humanEntityData}" visibleRowCount="{DataModel>/secondTable}">
+						<extension>
+							<m:OverflowToolbar>
+								<m:Title text="TABLE - B"/>
+							</m:OverflowToolbar>
+						</extension>
+						<columns>
+							<Column>
+								<m:Label text="Name"></m:Label>
+								<template>
+									<m:Text text="{DataModel>pName}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Age"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pAge}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Mobile Number"></m:Label>
+								<template>
+									<m:Text text="{DataModel>pMobileNumber}" />
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Email Id"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pEmailId}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="City"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pCity}"/>
+								</template>
+							</Column>
+							<Column>
+								<m:Label text="Country"></m:Label>
+								<template>
+									<m:Text  text="{DataModel>pCountry}"/>
+								</template>
+							</Column>
+						</columns>   
+					</Table>
+				</m:content>
+			</m:Page>
+		</m:pages>
+	</m:App>
+</mvc:View>

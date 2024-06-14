@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Popover id="personDetailPopover" placement="Auto" title="Person Details" afterClose="onPopoverClose" showHeader="true" contentWidth="80%" offsetY="-100">
+		<form:SimpleForm editable="true" 
+            labelSpanXL="2" 
+            labelSpanL="2" 
+            labelSpanM="2" 
+            labelSpanS="2" 
+            emptySpanXL="1" 
+            emptySpanL="1" 
+            emptySpanM="1" 
+            emptySpanS="1" 
+            columnsXL="2" 
+            columnsL="2" 
+            columnsM="2">
+			<form:content>
+				<core:Title/>
+			<Label text=" Name " design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectName}"></Text>
+			<Label text=" Age " design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectAge}"></Text>
+			<Label text="Designation" design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectDesignation}"></Text>
+			<Label text="Email Id " design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectEmailId}"></Text>
+				<core:Title/>
+			<Label text="Mobile Number " design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectMobileNumber}" ></Text>
+			<Label text="Alternate Mobile Number " design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectAltMobileNumber}" ></Text>
+			<Label text="City" design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectCity}" ></Text>
+			<Label text="Country" design="Bold"></Label>
+			<Text text="{personDataModel>/personEntityData/personObjectCountry}" ></Text>
+			</form:content>
+		</form:SimpleForm>
+	</Popover>
+</core:FragmentDefinition>

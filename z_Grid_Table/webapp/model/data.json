@@ -1,0 +1,86 @@
+{
+	"personEntityData" : [
+		{
+			"pName" : "Chaitanya",
+			"pAge"  : "23",
+			"pMobileNumber" : "7093768931",
+			"pEmailId" : "chaitu@gmail.com",
+			"pCity" : "Tirupati",
+			"pCountry" : "India"
+		},
+		{
+			"pName" : "Vishnu",
+			"pAge"  : "26",
+			"pMobileNumber" : "6303836762",
+			"pEmailId" : "visnu@gmail.com",
+			"pCity" : "Guntur",
+			"pCountry" : "India"
+		},
+		{
+			"pName" : "Satish",
+			"pAge"  : "28",
+			"pMobileNumber" : "8824457901",
+			"pEmailId" : "satish@gmail.com",
+			"pCity" : "Bhimavaram",
+			"pCountry" : "India"
+		},
+		{
+			"pName" : "John",
+			"pAge"  : "30",
+			"pMobileNumber" : "8600884421",
+			"pEmailId" : "john@gmail.com",
+			"pCity" : "Texas",
+			"pCountry" : "Usa"
+		},
+		{
+			"pName" : "Emily",
+			"pAge"  : "28",
+			"pMobileNumber" : "9440178859",
+			"pEmailId" : "emily@gmail.com",
+			"pCity" : "Melbourne",
+			"pCountry" : "Australia"
+		}],
+		
+		"humanEntityData" : [
+		{
+			"pName" : "Chaitanya",
+			"pAge"  : "23",
+			"pMobileNumber" : "7093768931",
+			"pEmailId" : "chaitu@gmail.com",
+			"pCity" : "Tirupati",
+			"pCountry" : "India"
+		},
+		{
+			"pName" : "Vishnu",
+			"pAge"  : "26",
+			"pMobileNumber" : "6303836762",
+			"pEmailId" : "visnu@gmail.com",
+			"pCity" : "Guntur",
+			"pCountry" : "India"
+		},
+		{
+			"pName" : "Satish",
+			"pAge"  : "28",
+			"pMobileNumber" : "8824457901",
+			"pEmailId" : "satish@gmail.com",
+			"pCity" : "Bhimavaram",
+			"pCountry" : "India"
+		},
+		{
+			"pName" : "John",
+			"pAge"  : "30",
+			"pMobileNumber" : "8600884421",
+			"pEmailId" : "john@gmail.com",
+			"pCity" : "Texas",
+			"pCountry" : "Usa"
+		},
+		{
+			"pName" : "Emily",
+			"pAge"  : "28",
+			"pMobileNumber" : "9440178859",
+			"pEmailId" : "emily@gmail.com",
+			"pCity" : "Melbourne",
+			"pCountry" : "Australia"
+		}
+		]
+}

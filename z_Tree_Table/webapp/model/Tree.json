@@ -1,0 +1,108 @@
+{
+	"table1Cricket" : [
+		{
+			"name":"IPL",
+		 "IPL": [
+		 	{
+				"Team" : "Mumbai Indians",
+				"Champions" : "5-Times"
+			},
+			{
+				"Team" : "Chennai Super Kings",
+				"Champions" : "5-Times"
+			},
+			{
+				"Team" : "Royal Challengers Bangalore",
+				"Champions" : "o-Time"
+			}
+		]},
+		
+	 {
+	 		"name":"T20",
+			"T20" :	[
+			{
+				"Team" : "Pakistan",
+				"Champions" : "1-Time"
+			},
+			{
+				"Team" : "England",
+				"Champions" : "2-Times"
+			},
+			{
+				"Team" : "West Indies",
+				"Champions" : "2-Times"
+			}
+		]},
+		
+	 {
+	 		"name":"ODI",
+	 		"ODI" :[
+			{
+				"Team" : "India",
+				"Champions" : "2-Times"
+			},
+			{
+				"Team" : "Australia",
+				"Champions" : "6-Times"
+			},
+			{
+				"Team" : "Sri Lanka",
+				"Champions" : "1-Time"
+			}
+		]}
+	],
+	
+	
+	"table2Cricket" : [
+		{
+			"name":"IPL",
+		 "IPL": [
+		 	{
+				"Team" : "Mumbai Indians",
+				"Champions" : "5-Times"
+			},
+			{
+				"Team" : "Chennai Super Kings",
+				"Champions" : "5-Times"
+			},
+			{
+				"Team" : "Royal Challengers Bangalore",
+				"Champions" : "o-Time"
+			}
+		]},
+		
+	 {
+	 		"name":"T20",
+			"T20" :	[
+			{
+				"Team" : "Pakistan",
+				"Champions" : "1-Time"
+			},
+			{
+				"Team" : "England",
+				"Champions" : "2-Times"
+			},
+			{
+				"Team" : "West Indies",
+				"Champions" : "2-Times"
+			}
+		]},
+		
+	 {
+	 		"name":"ODI",
+	 		"ODI" :[
+			{
+				"Team" : "India",
+				"Champions" : "2-Times"
+			},
+			{
+				"Team" : "Australia",
+				"Champions" : "6-Times"
+			},
+			{
+				"Team" : "Sri Lanka",
+				"Champions" : "1-Time"
+			}
+		]}
+	]
+}
