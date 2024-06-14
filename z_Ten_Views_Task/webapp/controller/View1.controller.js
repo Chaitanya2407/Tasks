@@ -63,7 +63,7 @@ sap.ui.define([
 			
 			var oForm = this.getView().byId("dynamicForm");
             oForm.addItem(BusForm);
-            
+             
             var oButton = this.getView().byId("dynamicButton");
             var getButton = sap.ui.getCore().byId("onSubmitDynamicForm");
             oButton.addItem(getButton);

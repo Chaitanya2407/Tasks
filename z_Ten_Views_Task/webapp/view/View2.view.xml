@@ -1,0 +1,63 @@
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns:m="sap.m"  xmlns:core="sap.ui.core"  xmlns="sap.ui.table">
+	<m:App>
+		<m:pages>
+			<m:Page title="{i18n>2Nd View}">
+				<m:content>
+					
+					<m:FlexBox justifyContent="End">
+						<m:Button text="Add Row" type="Accept"  icon="sap-icon://sys-add" press="gridAddBtn" class="sapUiMediumMarginEnd"></m:Button>
+						<m:Button text="Delete" type="Reject" icon="sap-icon://delete" press="gridDeleteBtn" class="sapUiMediumMarginEnd"></m:Button>
+					</m:FlexBox>
+						
+						
+					<!--	<Table id="gridTable" selectionMode="MultiToggle" rows="{DataModel>/personEntityData}" visibleRowCount="{DataModel>/firstTable}">-->
+					<!--	<extension>-->
+					<!--		<m:OverflowToolbar>-->
+					<!--			<m:Title text="TABLE - A"/>-->
+					<!--		</m:OverflowToolbar>-->
+					<!--	</extension>-->
+					<!--	<columns>-->
+					<!--		<Column>-->
+					<!--			<m:Label text="Name"></m:Label>-->
+					<!--			<template>-->
+					<!--				<m:Input id="inpNameTableId" placeholder="Name"></m:Input>-->
+					<!--			</template>-->
+					<!--		</Column>-->
+					<!--		<Column>-->
+					<!--			<m:Label text="Email Id"></m:Label>-->
+					<!--			<template>-->
+					<!--				<m:Input id="inpEmailTableId" placeholder="Email Id"></m:Input>-->
+					<!--			</template>-->
+					<!--		</Column>-->
+					<!--		<Column>-->
+					<!--			<m:Label text="Mobile Number"></m:Label>-->
+					<!--			<template>-->
+					<!--				<m:Input id="inpMobileTableId" placeholder="Mobile Number"></m:Input>-->
+					<!--			</template>-->
+					<!--		</Column>-->
+					<!--		<Column>-->
+					<!--			<m:Label text="City"></m:Label>-->
+					<!--			<template>-->
+					<!--				<m:Input id="inpCityTableId" placeholder="City"></m:Input>-->
+					<!--			</template>-->
+					<!--		</Column>-->
+					<!--		<Column>-->
+					<!--			<m:Label text="Country"></m:Label>-->
+					<!--			<template>-->
+					<!--				<m:Input id="inpCountryTableId" placeholder="Country"></m:Input>-->
+					<!--			</template>-->
+					<!--		</Column>-->
+					<!--		<Column>-->
+					<!--			<m:Label text="Actions"></m:Label>-->
+					<!--			<template>-->
+					<!--				<m:Button text="Save" type="Emphasized" id="gridSaveBtn" press="onSaveEditBtnPress"></m:Button>-->
+					<!--			</template>-->
+					<!--		</Column>-->
+					<!--	</columns>   -->
+					<!--</Table>-->
+				</m:content>
+			</m:Page>
+		</m:pages>
+	</m:App>
+</mvc:View>
